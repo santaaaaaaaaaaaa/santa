@@ -221,4 +221,6 @@ body, html {
 .penguin {
   width: 150px;
   height: 150px;
+  position: absolute;
+  z-index: 999;
 }
