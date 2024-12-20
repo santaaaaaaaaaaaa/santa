@@ -227,3 +227,6 @@ body, html {
   right: 50%;
   margin-bottom: -230px;
 }
+#load {
+  z-index: 1000;
+}
