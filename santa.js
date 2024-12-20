@@ -79,17 +79,6 @@ addEventListener("DOMContentLoaded", (event) => {
 
       requestAnimFrame(update);
     }
-    function playAudio(play){
-      let audio = new Audio('https://www.chosic.com/wp-content/uploads/2023/11/Christmas-Snow-Long-Version-chosic.com_.mp3');
-      if(play == 1) {
-        audio.play();
-        aud.onended = function() {
-          setTimeout(audio.play(), 1)
-        };
-      } else {
-        audio.pause();
-      }
-    }
     // shim layer with setTimeout fallback
     window.requestAnimFrame = (function() {
       return window.requestAnimationFrame ||
@@ -105,6 +94,17 @@ addEventListener("DOMContentLoaded", (event) => {
 
     masthead.appendChild(canvas);
   })();
+  function playAudio(play){
+      let audio = new Audio('https://www.chosic.com/wp-content/uploads/2023/11/Christmas-Snow-Long-Version-chosic.com_.mp3');
+      if(play == 1) {
+        audio.play();
+        aud.onended = function() {
+          setTimeout(audio.play(), 1)
+        };
+      } else {
+        audio.pause();
+      }
+  }
   window.onload = function (){
     setTimeout(()=>{
       playAudio(1)
