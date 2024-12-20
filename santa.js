@@ -94,12 +94,12 @@ addEventListener("DOMContentLoaded", (event) => {
 
     masthead.appendChild(canvas);
   })();
+  let audio = new Audio('https://www.chosic.com/wp-content/uploads/2023/11/Christmas-Snow-Long-Version-chosic.com_.mp3');
   function playAudio(play){
-      let audio = new Audio('https://www.chosic.com/wp-content/uploads/2023/11/Christmas-Snow-Long-Version-chosic.com_.mp3');
       if(play == 1) {
         audio.play();
-        aud.onended = function() {
-          setTimeout(audio.play(), 1)
+        audio.onended = function() {
+          setTimeout(()=>audio.play(), 1)
         };
       } else {
         audio.pause();
