@@ -253,42 +253,9 @@ body, html {
 }
 #button:hover {
 }
-.hat-bottom {
-  z-index: 60;
+.hat {
   position: absolute;
-  width: 80%;
-  height: 20%;
-  background: white;
-  border-radius: 10%;
-  bottom: 0;
-}
-
-.hat-middle {
-  z-index: 50;
-  position: absolute;
-  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  background: #C40000;
-  height: 80%;
-  width: 80%;
-}
-
-.hat-point {
-  z-index: 40;
-  position: absolute;
-  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  background: #6F0101;
-  height: 40%;
-  width: 20%;
-  transform: translatex(-100%) translatey(-75%) rotate(-90deg)
-}
-
-.hat-ball {
-  z-index: 50;
-  border-radius: 50%;
-  width: 15%;
-  height: 15%;
-  background: white;
-  transform: translatex(-220%) translatey(-200%)
+  transform: scale(0.13);
+  top: -247px;
+  left: -116px;
 }
