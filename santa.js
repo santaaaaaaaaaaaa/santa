@@ -105,11 +105,18 @@ addEventListener("DOMContentLoaded", (event) => {
         audio.pause();
       }
   }
+  let allowButtonActions = false;
   window.onload = function (){
     setTimeout(()=>{
-      //playAudio(1)
+      allowButtonActions = true;
       document.getElementById("button").style.opacity = 1
       document.getElementById("loader").style.opacity = 0
     },3000)
+  }
+  document.getElementById("button").onclick = function(){
+    if(allowButtonActions) {
+      playAudio(1)
+      document.getElementById("load").style.opacity = 0
+    }
   }
 });
