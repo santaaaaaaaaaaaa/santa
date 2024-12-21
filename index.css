@@ -237,11 +237,11 @@ body, html {
   left: 50%;
   width: 150px;
   height: 50px;
-  margin-left: 75px;
+  margin-left: -75px;
   margin-top: -25px;
   border: 0;
 }
 #button {
-  transition: 500ms
+  transition: 500ms;
   opacity: 0;
 }
