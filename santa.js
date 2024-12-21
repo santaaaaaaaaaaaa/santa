@@ -108,7 +108,7 @@ addEventListener("DOMContentLoaded", (event) => {
   window.onload = function (){
     setTimeout(()=>{
       playAudio(1)
-      document.getElementById("load").style.opacity = 0
+      document.getElementById("loader").style.opacity = 0
     },3000)
   }
 });
