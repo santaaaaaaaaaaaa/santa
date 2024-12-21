@@ -244,4 +244,12 @@ body, html {
 #button {
   transition: 500ms;
   opacity: 0;
+  border-radius: 20px;
+  border: 2px #d0513f solid;
+  background-color: #f5624d;
+  color: white;
+  font-size: 15px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+#button:hover {
 }
