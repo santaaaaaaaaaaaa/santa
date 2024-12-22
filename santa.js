@@ -105,6 +105,8 @@ addEventListener("DOMContentLoaded", (event) => {
         audio.pause();
       }
   }
+  function dowhatever(){
+  }
   let allowButtonActions = false;
   window.onload = function (){
     setTimeout(()=>{
@@ -117,6 +119,9 @@ addEventListener("DOMContentLoaded", (event) => {
     if(allowButtonActions) {
       playAudio(1)
       document.getElementById("load").style.opacity = 0
+      setTimeout(()=>{
+        dowhatever();
+      }, 300)
     }
   }
 });
