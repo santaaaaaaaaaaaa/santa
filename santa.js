@@ -120,8 +120,9 @@ addEventListener("DOMContentLoaded", (event) => {
       playAudio(1)
       document.getElementById("load").style.opacity = 0
       setTimeout(()=>{
+        document.getElementById("load").style.display = "none"
         dowhatever();
-      }, 300)
+      }, 3000)
     }
   }
 });
