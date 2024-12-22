@@ -4,6 +4,15 @@ body, html {
   height: 100%;
 }
 
+.merry {
+  margin-top: 70px;
+  color: white;
+  font-family:'Josefin Sans', sans-serif;    
+  color:white;
+  font-size:52px;
+  letter-spacing:9px;
+}
+
 .sky {
   height: 100%;
   width: 100%;
