@@ -291,4 +291,7 @@ body, html {
   display: inline-block;
   min-width: 200px;
   min-height: 30px;
+  font-family:'Josefin Sans', sans-serif;    
+  color: white;
+  font-size: 18px;
 }
