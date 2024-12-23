@@ -288,4 +288,7 @@ body, html {
   margin-left: -125px;
   margin-top: -30px;
   box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  display: inline-block;
+  min-width: 200px;
+  min-height: 30px;
 }
