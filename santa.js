@@ -105,17 +105,38 @@ addEventListener("DOMContentLoaded", (event) => {
         audio.pause();
       }
   }
+  let penguinSpeech = [], speaking = false;;
   function penguinSpeaks(text,duration){
     if(!allowButtonActions) return
     let textbox = document.getElementById("chat")
     textbox.innerText = text;
     textbox.style.opacity = 1; //transition 500ms
+    speaking = true;
     setTimeout(()=>{
       textbox.style.opacity = 0;
+      speaking = false;
     }, duration+500) //ms
   }
+  function addQueue(text, duration){
+    penguinSpeech.push({
+      t: text,
+      d: duration
+    });
+  }
+  function managePenguinSpeech(){
+    let oldestReq = penguinSpeech[0]
+    if(textbox.style.opacity == 0 && !speaking) {
+      penguinSpeaks(oldestReq.t, oldestReq.d)
+      penguinSpeech.shift()
+    }
+  }
+  setInterval(()=>{
+    managePenguinSpeech(); //loop idk if its gonna crash idk idk idk idk idk pls dont crash pls pl spl pls pls i beg 
+  })
   function dowhatever(){
-    penguinSpeaks("MERRY CHRISTMAS :D", 3000)
+    addQueue("MERRY CHRISTMAS :D", 2500)
+    addQueue("I have 3 presents for you >:3", 2500)
+    addQueue("TAKE A LOOK :D", 2500)
   }
   let allowButtonActions = false;
   window.onload = function (){
