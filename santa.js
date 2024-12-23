@@ -132,7 +132,7 @@ addEventListener("DOMContentLoaded", (event) => {
     }
   }
   setInterval(()=>{
-    managePenguinSpeech(); //loop idk if its gonna crash idk idk idk idk idk pls dont crash pls pl spl pls pls i beg 
+    if(allowButtonActions)managePenguinSpeech(); //loop idk if its gonna crash idk idk idk idk idk pls dont crash pls pl spl pls pls i beg 
   })
   function dowhatever(){
     addQueue("MERRY CHRISTMAS :D", 2500)
