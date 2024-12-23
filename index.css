@@ -278,8 +278,6 @@ body, html {
 }
 .penguin-dia {
   position: absolute;
-  height: 100px;
-  width: 100px;
   background: rgb(255 255 255 / 50%);
   transition: 500ms;
   top: 50%;
@@ -289,9 +287,12 @@ body, html {
   margin-top: -30px;
   box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
   display: inline-block;
-  min-width: 200px;
-  min-height: 30px;
+  min-width: 150px;
+  min-height: 10px;
   font-family:'Josefin Sans', sans-serif;    
   color: white;
   font-size: 18px;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
 }
