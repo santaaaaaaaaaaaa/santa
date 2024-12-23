@@ -153,7 +153,7 @@ addEventListener("DOMContentLoaded", (event) => {
       setTimeout(()=>{
         document.getElementById("load").style.display = "none"
         dowhatever();
-      }, 3000)
+      }, 1500)
     }
   }
 });
