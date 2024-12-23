@@ -115,6 +115,7 @@ addEventListener("DOMContentLoaded", (event) => {
     }, duration+500) //ms
   }
   function dowhatever(){
+    penguinSpeaks("MERRY CHRISTMAS :D", 3000)
   }
   let allowButtonActions = false;
   window.onload = function (){
