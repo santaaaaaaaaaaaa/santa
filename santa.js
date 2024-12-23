@@ -126,7 +126,7 @@ addEventListener("DOMContentLoaded", (event) => {
   function managePenguinSpeech(){
     let textbox = document.getElementById("chat");
     let oldestReq = penguinSpeech[0];
-    if(textbox.style.opacity == 0 && !speaking) {
+    if(oldestReq !== void 0 && textbox.style.opacity == 0 && !speaking) {
       penguinSpeaks(oldestReq.t, oldestReq.d)
       penguinSpeech.shift()
     }
