@@ -136,6 +136,7 @@ addEventListener("DOMContentLoaded", (event) => {
   function dowhatever(){
     addQueue("MERRY CHRISTMAS :D", 2500)
     addQueue("I have 3 presents for you >:3", 2500)
+    addQueue("Remember to come back to me after you open each present", 4800)
     addQueue("TAKE A LOOK :D", 2500)
   }
   let allowButtonActions = false;
