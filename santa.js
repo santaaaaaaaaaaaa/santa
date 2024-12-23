@@ -105,6 +105,15 @@ addEventListener("DOMContentLoaded", (event) => {
         audio.pause();
       }
   }
+  function penguinSpeaks(text,duration){
+    if(!allowButtonActions) return
+    let textbox = document.getElementById("chat")
+    textbox.innerText = text;
+    textbox.style.opacity = 1; //transition 500ms
+    setTimeout(()=>{
+      textbox.style.opacity = 0;
+    }, duration+500) //ms
+  }
   function dowhatever(){
   }
   let allowButtonActions = false;
