@@ -1,8 +1,8 @@
 addEventListener("DOMContentLoaded", (event) => {
-  (function() {
+  function snow(selector) {
 
     var COUNT = 300;
-    var masthead = document.querySelector('.sky');
+    var masthead = document.querySelector(selector);
     var canvas = document.createElement('canvas');
     var ctx = canvas.getContext('2d');
     var width = masthead.clientWidth;
@@ -79,6 +79,7 @@ addEventListener("DOMContentLoaded", (event) => {
 
       requestAnimFrame(update);
     }
+    snow('.sky')
     // shim layer with setTimeout fallback
     window.requestAnimFrame = (function() {
       return window.requestAnimationFrame ||
@@ -93,7 +94,7 @@ addEventListener("DOMContentLoaded", (event) => {
     window.addEventListener('resize', onResize, false);
 
     masthead.appendChild(canvas);
-  })();
+  }
   let audio = new Audio('https://dl.dropboxusercontent.com/scl/fi/cb8hgqibl718mich3oui4/Christmas-Snow-Long-Version-chosic.com_.mp3?rlkey=zdsvaljo5e0jx40by2unaufd5&e=1&st=0d93145q&dl=0');
   function playAudio(play){
       if(play == 1) {
