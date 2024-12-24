@@ -36,6 +36,7 @@ addEventListener("DOMContentLoaded", (event) => {
       this.o = 0.5 + Math.random() * 0.5;
     }
     canvas.style.position = 'absolute';
+    canvas.style.zIndex = -1;
     canvas.style.left = canvas.style.top = '0';
     var snowflakes = [],
       snowflake;
