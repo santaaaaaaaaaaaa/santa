@@ -80,6 +80,7 @@ addEventListener("DOMContentLoaded", (event) => {
       requestAnimFrame(update);
     }
     snow('.sky')
+    snow('.loadpage')
     // shim layer with setTimeout fallback
     window.requestAnimFrame = (function() {
       return window.requestAnimationFrame ||
