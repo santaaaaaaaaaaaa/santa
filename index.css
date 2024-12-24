@@ -280,7 +280,7 @@ body, html {
   position: absolute;
   background: rgb(255 255 255 / 50%);
   transition: 500ms;
-  top: 50%;
+  top: 57%;
   z-index: 1;
   left: 50%;
   margin-left: -125px;
