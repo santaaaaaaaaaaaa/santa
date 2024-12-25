@@ -160,6 +160,9 @@ addEventListener("DOMContentLoaded", (event) => {
       element.onclick = function(){
         element.classList.add("flip");
         window.open(idkhowtonamevariables[open][1], '_blank');
+        if(open == 2){
+          addQueue("AYYYY :D", 2500)
+        }
         open += 1
       }
     })
