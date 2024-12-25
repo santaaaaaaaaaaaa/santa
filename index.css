@@ -310,6 +310,16 @@ body, html {
   margin-left: -75px;
   left: 50%;
 }
+#card2 {
+  margin-top: -75px;
+  margin-left: -75px;
+  left: 25%;
+}
+#card3 {
+  margin-top: -75px;
+  margin-left: -75px;
+  left: 75%;
+}
 
 ul {
   color: #10A296;
