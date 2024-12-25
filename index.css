@@ -492,3 +492,7 @@ li {
     transform: translateY(0px);
   }
 }
+.front {
+  color: wheat;
+  font-family:'Josefin Sans', sans-serif; 
+}
