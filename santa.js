@@ -149,10 +149,12 @@ addEventListener("DOMContentLoaded", (event) => {
     setTimeout(()=>{
       presentsDropdown()
     },2500+2500+4800+2500)
-    let card1 = document.getElementById("card1")
-    card1.onclick = function(){
-      card1.classList.add("flip");
-    }
+    let cards = document.querySelectorAll(".card");
+    cards.forEach((element)=>{
+      element.onclick = function(){
+        element.classList.add("flip");
+      }
+    })
   }
   let allowButtonActions = false;
   window.onload = function (){
