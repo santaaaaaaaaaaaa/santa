@@ -135,6 +135,12 @@ addEventListener("DOMContentLoaded", (event) => {
     card3.style.animation = "dropdown 0.6s forwards";
     card3.style.animationDelay = "250ms";
   }
+  function hidePresents(){
+    for(let i = 0; i < 3; i++){
+      let ind = i+1
+      document.getElementById("card" + ind).style.display = "none"
+    }
+  }
   function dowhatever(){
     addQueue("MERRY CHRISTMAS :D", 2500)
     addQueue("I have 3 presents for you >:3", 2500)
@@ -160,6 +166,7 @@ addEventListener("DOMContentLoaded", (event) => {
     if(allowButtonActions) {
       playAudio(1)
       document.getElementById("load").style.opacity = 0
+      hidePresents()
       setTimeout(()=>{
         document.getElementById("load").style.display = "none"
         dowhatever();
