@@ -140,6 +140,9 @@ addEventListener("DOMContentLoaded", (event) => {
     addQueue("I have 3 presents for you >:3", 2500)
     addQueue("Remember to come back to me after you open each present", 4800)
     addQueue("TAKE A LOOK :D", 2500)
+    setTimeout(()=>{
+      presentsDropdown()
+    },2500+2500+4800+2500)
     let card1 = document.getElementById("card1")
     card1.onclick = function(){
       card1.classList.add("flip");
