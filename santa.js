@@ -119,6 +119,22 @@ addEventListener("DOMContentLoaded", (event) => {
   setInterval(()=>{
     if(allowButtonActions)managePenguinSpeech(); //loop idk if its gonna crash idk idk idk idk idk pls dont crash pls pl spl pls pls i beg 
   })
+  function presentsDropdown(){
+    let card1 = document.getElementById("card1")
+    card1.style.transform = "translateY(-400px)";
+    card1.style.display = "block"
+    card1.style.animation = "dropdown 0.6s forwards";
+    card1.style.animationDelay = "400ms";
+    let card2 = document.getElementById("card1")
+    card2.style.transform = "translateY(-400px)";
+    card2.style.display = "block"
+    card2.style.animation = "dropdown 0.6s forwards";
+    let card3 = document.getElementById("card1")
+    card3.style.transform = "translateY(-400px)";
+    card3.style.display = "block"
+    card3.style.animation = "dropdown 0.6s forwards";
+    card3.style.animationDelay = "250ms";
+  }
   function dowhatever(){
     addQueue("MERRY CHRISTMAS :D", 2500)
     addQueue("I have 3 presents for you >:3", 2500)
