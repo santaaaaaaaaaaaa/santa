@@ -159,13 +159,7 @@ addEventListener("DOMContentLoaded", (event) => {
     cards.forEach((element)=>{
       element.onclick = function(){
         element.classList.add("flip");
-        document.getElementById("front" + (open+1)).innerText = idkhowtonamevariables[open][0]
-        if(open == 2){
-          addQueue("AYYYY U GOT IT", 255000)
-        }
-        setTimeout(()=>{
-          window.open(idkhowtonamevariables[open][1], '_blank');
-        },120)
+        window.open(idkhowtonamevariables[open][1], '_blank');
         open += 1
       }
     })
