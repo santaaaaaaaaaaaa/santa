@@ -141,6 +141,12 @@ addEventListener("DOMContentLoaded", (event) => {
       document.getElementById("card" + ind).style.display = "none"
     }
   }
+  let idkhowtonamevariables = [
+    ["oops wrong one", "https://cdn.augystudios.com/media/misc/NGGYU-Cprsd.mp4"],
+    ["oops wrong one", "https://cdn.augystudios.com/media/misc/NGGYU-Cprsd.mp4"],
+    ["CONGRATS", ""]
+  ]
+  let open = 0;
   function dowhatever(){
     addQueue("MERRY CHRISTMAS :D", 2500)
     addQueue("I have 3 presents for you >:3", 2500)
@@ -153,6 +159,14 @@ addEventListener("DOMContentLoaded", (event) => {
     cards.forEach((element)=>{
       element.onclick = function(){
         element.classList.add("flip");
+        document.getElementById("front" + open).innerText = idkhowtonamevariables[open][0]
+        if(open == 2){
+          addQueue("AYYYY U GOT IT", 255000)
+        }
+        setTimeout(()=>{
+          window.open(idkhowtonamevariables[open][1], '_blank');
+        },120)
+        open += 1
       }
     })
   }
