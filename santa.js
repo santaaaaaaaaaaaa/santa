@@ -144,7 +144,7 @@ addEventListener("DOMContentLoaded", (event) => {
   let idkhowtonamevariables = [
     ["oops wrong one", "https://cdn.augystudios.com/media/misc/NGGYU-Cprsd.mp4"],
     ["oops wrong one", "https://cdn.augystudios.com/media/misc/NGGYU-Cprsd.mp4"],
-    ["CONGRATS", ""]
+    ["CONGRATS", "https://takeb1nzyto.space/"]
   ]
   let open = 0;
   function dowhatever(){
